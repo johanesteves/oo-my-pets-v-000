@@ -3,7 +3,7 @@ class Owner
   attr_accessor :name, :pets
   attr_reader :species
 
-  @@all = []
+  ALL = []
 
   def initialize(name)
     @name = name
@@ -52,7 +52,7 @@ class Owner
     self.pets.values.flatten.each do |pet|
       pet.mood = "nervous"
     end
-    
+
     self.pets.clear
   end
 
